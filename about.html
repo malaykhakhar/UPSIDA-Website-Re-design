@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="/script/main.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Karla|Alatsi|Noto Sans JP|Inter|Roboto"
+      rel="stylesheet"
+    />
+
+    <!-- Jquery for navbar and footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Loading Navbar & Footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="/images/logo.svg" alt="website logo" />
+      </div>
+      <div class="logo--title logo--and--special">
+        Uttar Pradesh State Industrial Development Authority
+      </div>
+      <div class="special--link logo--and--special">
+        <a class="link1" href="">special link one</a>
+        <a class="link2" href="">special link two</a>
+      </div>
+
+      <div class="help logo--and--special">
+        <a class="contact" href="">Contact us</a>
+        <a class="login" href="">Login</a>
+      </div>
+    </nav>
+
+    <div class="back--nav">
+      <nav class="bottom--nav">
+        <div class="list__item">
+          <a class="nav--link" href="/index.html">HOME</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link active" href="/about.html">ABOUT US</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/policies.html">POLICIES</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/eservices.html">E-SERVICES</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/flagship.html">FLAGSHIP PROJECTS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link dropbtn" onclick="myFunction()">
+            RESOURCE CENTER
+          </a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/officeOrders.html">OFFICE ORDERS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/error.html">GIS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/error.html">AVAILABLE PLOTS</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="dropdown-content" id="myDropdown">
+      <div class="line"></div>
+      <div class="content">
+        <div class="resource--heading">
+          <div class="resource--tag">Our recent links</div>
+          <div class="resource--title">Resource Center</div>
+        </div>
+
+        <!-- <div class="doc--table"> -->
+        <table class="documents--table">
+          <thead class="document--header">
+            <tr>
+              <th>DOCUMENTS</th>
+            </tr>
+          </thead>
+
+          <tbody class="document--body">
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Industrial area operating process</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Operating Manual</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Document For approval of building plans</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Present Rates</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Condition For tenders</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Allotment application form</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Service Rules</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- </div> -->
+
+        <table class="upsida--table">
+          <thead class="document--header">
+            <tr>
+              <th>UPSIDA</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >By laws of UPSIDA</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Amendment in UPSIDA Land Development & Building Regulation
+                  2018</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Second Amendment in UPSIDA Land Development</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="pages--table">
+          <thead class="document--header">
+            <tr>
+              <th>PAGES</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td>
+                <a
+                  href="/officeOrders.html"
+                  class="remove_link_decoration"
+                  target="_blank"
+                  >Office Orders</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Development Process</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="top_image">
+      <img class="top_image_width" src="images/aboutus--pic1.svg" alt="" />
+    </div>
+
+    <div
+      class="grid grid--1x2 aboutus--container"
+      style="margin-top: 78px; height: 260px"
+    >
+      <div class="intro--heading" data-aos="fade-left">
+        <p class="aboutus--heading">About us</p>
+        <p class="whatisupsida--heading">What is UPSIDA?</p>
+      </div>
+      <div class="aboutus--para" data-aos="fade-left">
+        <p>
+          UPSIDA is the nodal agency for developing industrial
+          infrastructure.<br /><br />
+          UPSIDA has been spearheading the industrial promotion in the State and
+          has been instrumental in keeping the State at the numero uno position
+          among the states for several decades now.
+        </p>
+      </div>
+    </div>
+
+    <div class="gridabout">
+      <div class="gridaboutitem gridaboutitem1" data-aos="fade-up">
+        <p class="gridaboutpara">
+          We are a public sector undertaking of the Corporation of Uttar Pradesh
+          spearheading the development of industrial infrastructure in State
+          since the last 56 years.
+        </p>
+        <ul>
+          <li class="gridaboutpara">
+            Pioneer in development of industrial areas, we have delivered iconic
+            industrial Areas, Townships & Industrial Parks on more than 42000
+            acres of land.
+          </li>
+          <li class="gridaboutpara">
+            Townships & Industrial Parks on more than 42000 acres of land.
+            Through which the houses more than 26,000 units providing direct
+            employment to lacs of people.
+          </li>
+        </ul>
+      </div>
+      <div class="gridaboutitem gridaboutitem2" data-aos="fade-left">
+        <img src="images/aboutus--pic3.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="values">
+      <div class="values_heading" data-aos="fade-up">
+        <small class="values_headingtop"> Our Values </small>
+        <p class="values_headingcontent">What we stand for</p>
+      </div>
+
+      <p class="values_content" data-aos="fade-up">
+        We provide infrastructure facilities and services to our entrepreneurs,
+        and strive to build on our strength as a pillar of the pulsating
+        industrial ecosystem of Uttar Pradesh.
+        <br /><br />
+        To cater to the modern demands of High-tech quality infrastructure, the
+        Corporation has ventured into many new areas by developing High-tech
+        integrated industrial townships like Trans Ganga and Saraswati High-tech
+        cities and also sector specific industrial areas like Plastic City, Agro
+        Parks, Apparel Park, Leather Park , among others.
+      </p>
+
+      <div class="values_image" data-aos="fade-up">
+        <img src="images/aboutus--pic4.svg" alt="" class="values_img" />
+      </div>
+    </div>
+
+    <div class="expert">
+      <div class="expertitem expertitem1">
+        <h4 class="expertheading" data-aos="fade-up">Know Our Expertise</h4>
+        <p class="expertcontent" data-aos="fade-up">
+          With an excellent in house pool of multi disciplinary managerial
+          experts, engineers and architects, complemented by our in depth
+          experience, today we have transformed ourselves into an organization
+          that provides integrated infrastructure facilities.
+          <br /><br />
+          Our facilities include
+        </p>
+        <ul class="checkmark" data-aos="fade-up">
+          <li class="expertcontent">
+            Industrial, residential, commercial, institutional and support
+            facilities
+          </li>
+          <br />
+          <li class="expertcontent" data-aos="fade-up">
+            Located across the state of Uttar Pradesh at prime locations and
+            near to existing clusters, raw material, hubs, highways etc and are
+            equipped with road network, electrification network, parks and green
+            belts
+          </li>
+        </ul>
+        <br />
+        <p class="expertcontent" data-aos="fade-up">
+          Provide need based space for common facilities like banks, post
+          office, dispensary, police outpost, shops business development
+          centers, fields-hostels, CETP/STP, shopping malls, expo-centers,
+          school, colleges and universities etc.
+        </p>
+      </div>
+
+      <div class="expertitem expertitem2" data-aos="fade-left">
+        <img src="images/aboutus--pic5.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="partner">
+      <p class="partner_heading">
+        Industrial units that have been setup in our various industrial Areas
+      </p>
+      <marquee behavior="scroll" direction="left" scrollamount="20">
+        <img
+          src="images/aboutus--pic6.svg"
+          alt=""
+          class="partnerimage"
+          style="margin-top: 60px"
+        />
+      </marquee>
+      <p class="partnercontent" data-aos="fade-up">
+        With Uttar Pradesh rapidly rising to become one of the top business
+        destinations in India, we welcome entrepreneurs desiring to set up or
+        expand their industrial ventures to explore the opportunities being
+        offered by UPSIDC Ltd, all across the State. We assure you the
+        best-in-class integrated infrastructure and escort services completely
+        time bound to meet your requirements.
+      </p>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- Script for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

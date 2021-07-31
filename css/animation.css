@@ -1,0 +1,73 @@
+/* Hover Fade */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover,
+.hvr-fade:focus,
+.hvr-fade:active {
+  width: 15.417vw;
+  height: 52px;
+  background: #2b3144;
+  border: 1px solid #2b3144;
+  box-sizing: border-box;
+  color: white;
+}
+
+.hvr-fade1 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade1:hover,
+.hvr-fade1:focus,
+.hvr-fade1:active {
+  width: 15.417vw;
+  height: 52px;
+
+  background: #f0f2f9;
+  border: 1px solid #2b3144;
+  box-sizing: border-box;
+  color: #2b3144;
+}
+
+.text-pop-up-top:hover,
+.text-pop-up-top:focus,
+.text-pop-up-top:active {
+  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    box-shadow: 0px 34px 44px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+}

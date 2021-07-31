@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TransGanga Project</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animation.css">
+    <script src="/script/main.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Karla|Alatsi|Noto Sans JP|Inter|Roboto"
+      rel="stylesheet"
+    />
+
+    <!-- Jquery for navbar and footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Loading Navbar & Footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="/images/logo.svg" alt="website logo" />
+      </div>
+      <div class="logo--title logo--and--special">
+        Uttar Pradesh State Industrial Development Authority
+      </div>
+      <div class="special--link logo--and--special">
+        <a class="link1" href="">special link one</a>
+        <a class="link2" href="">special link two</a>
+      </div>
+
+      <div class="help logo--and--special">
+        <a class="contact" href="">Contact us</a>
+        <a class="login" href="">Login</a>
+      </div>
+    </nav>
+
+    <div class="back--nav">
+      <nav class="bottom--nav">
+        <div class="list__item">
+          <a class="nav--link" href="/index.html">HOME</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/about.html">ABOUT US</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/policies.html">POLICIES</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/eservices.html">E-SERVICES</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/flagship.html">FLAGSHIP PROJECTS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link dropbtn" onclick="myFunction()">
+            RESOURCE CENTER
+          </a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/officeOrders.html">OFFICE ORDERS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/error.html">GIS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/error.html">AVAILABLE PLOTS</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="dropdown-content" id="myDropdown">
+      <div class="line"></div>
+      <div class="content">
+        <div class="resource--heading">
+          <div class="resource--tag">Our recent links</div>
+          <div class="resource--title">Resource Center</div>
+        </div>
+
+        <!-- <div class="doc--table"> -->
+        <table class="documents--table">
+          <thead class="document--header">
+            <tr>
+              <th>DOCUMENTS</th>
+            </tr>
+          </thead>
+
+            <tbody class="document--body">
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Industrial area operating process</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Operating Manual</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Document For approval of building plans</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Present Rates</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Condition For tenders</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Allotment application form</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Service Rules</a></td>
+              </tr>
+            </tbody>
+
+        </table>
+        <!-- </div> -->
+
+        <table class="upsida--table">
+          <thead class="document--header">
+            <tr>
+              <th>UPSIDA</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">By laws of UPSIDA</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/error.html" class="remove_link_decoration remove_resource_padding">Amendment in UPSIDA Land Development & Building Regulation 2018</a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Second Amendment in UPSIDA Land Development</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="pages--table">
+          <thead class="document--header">
+            <tr>
+              <th>PAGES</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td><a href="/officeOrders.html" class="remove_link_decoration" target="_blank">Office Orders</a></td>
+            </tr>
+            <tr>
+              <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Development Process</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="flagship_project_top flagship_project_alignment" data-aos="fade-up">
+      <p class="flagship_project_top_content">Unnao</p>
+    </div>
+
+    <h1 class="flagship_project_alignment flagship_project_heading" data-aos="fade-up">
+      Trans ganga city, UNNAO
+    </h1>
+
+    <p
+      class="flagship_project_alignment flagship_para"
+      style="margin-top: 33px" data-aos="fade-up"
+    >
+      Trans Ganga Project is spread over 1144.1 Acres of near Kanpur. <br />
+      Current Rate 10850 INR/Sq. mtr. for industrial & 18000 INR/Sq. mtr. for
+      residential. <br />
+      Trans Ganga City is being developed as an Industrial Model Township with
+      industrial, residential and commercial sectors. Situated within burgeoning
+      belt of Kanpur and Lucknow zone.
+    </p>
+    <ul class="flagship_project_alignment flagship_para" data-aos="fade-up">
+      <li>
+        Being developed as an Industrial Model Township with industrial,
+        residential and commercial sectors.
+      </li>
+      <li>Situated within burgeoning belt of Kanpur and Lucknow zone.</li>
+      <li>Land Earmarked for flatted factories</li>
+    </ul>
+
+    <h4 class="flagship_project_alignment loc" data-aos="fade-up">Location</h4>
+    <p class="flagship_project_alignment loc_content" data-aos="fade-up">
+      Latitude, Longitude - 23.43718, 87.25307 (Click to view map)
+    </p>
+
+    <div class="flag_p_img1" data-aos="fade-up">
+      <img src="images/flagship_p--pic1.svg" alt=""/>
+    </div>
+
+    <hr class="flagship_project_alignment fp_h1_line" data-aos="fade-up"/>
+    <h2 class="fp_h2_heading" data-aos="fade-up">USPs of project</h2>
+
+    <div class="flagship_project_alignment usp_box" data-aos="fade-up">
+      <p class="flagship_para usp_box_content" >
+        The city design has been planned at two levels. First, with the design
+        level elements required to make the city sustainable. Second, the
+        implementation of green roof, earth cooling, solar panels, ground water
+        recharge & waste management.In heart of the project, an iconic auto expo
+        mart is planned, making it a prominent visual marker. An amalgamation of
+        cluster with various project based activities creating a functionally
+        rich urban plaza.
+      </p>
+    </div>
+
+    <p class="flagship_project_alignment fp_features"data-aos="fade-up">
+      The features of project are
+    </p>
+    <div class="fp_features_arrow"data-aos="fade-up">
+      <img src="images/Arrow 2.svg" alt="Side Arrow" />
+    </div>
+
+    <ul class="flagship_project_alignment fp_features_para"data-aos="fade-up">
+      <li>Provision of 24x7 power supply.</li>
+      <li>International design standard.</li>
+      <li>
+        Provision for mall, exhibition centre, golf course, commercial,
+        residences and retail shops.
+      </li>
+      <li>Beautiful landscape with water bodies.</li>
+      <li>Ample green spaces.</li>
+      <li>Moderate and ambient temperature.</li>
+      <li>Self-sufficient in terms of water supply and sewage.</li>
+      <li>Adequately planned Sewerage Treatment Plant (STP).</li>
+      <li>Multiple choices for industrial, commercial & residential areas.</li>
+      <li>
+        Planned commercial, residential and elementary infrastructure for
+        industrial units.
+      </li>
+      <li>
+        Utility infrastructure of water supply, roads, drains, street light.
+      </li>
+      <li>Emergency infrastructure of police and fire stations.</li>
+      <li>
+        Independent overhead water tank to provide uninterrupted water supply.
+      </li>
+      <li>
+        Ample parking facility with greenery in the area, providing a healthy
+        surroundings.
+      </li>
+      <li>Iconic towers to be designed along the Ganga riverfront.</li>
+    </ul>
+
+    <div class="flag_p_img1"data-aos="fade-up">
+      <img src="images/flagship_p--pic2.svg" alt="" />
+    </div>
+
+    <hr class="flagship_project_alignment fp_h1_line" data-aos="fade-up"/>
+    <h2 class="fp_h2_heading"data-aos="fade-up">Investment Opportunities</h2>
+
+    <div class="flagship_project_alignment grid fp_investment">
+      <!--  -->
+      <div class="fp_grid_set big_height" data-aos="fade-up">
+        <div class="fp_investment_item">
+          <h3 class="fp_investment_heading">Industrial</h3>
+          <div class="fp_line"></div>
+          <p class="fp_content">
+            Two distinct types of land parcels are proposed, flatted factories
+            and industrial plots. The total area of Industrial Land available is
+            appox. 9,71,246 Sq. Mt. (240 Acres).
+          </p>
+          <ul class="fp_content">
+            <li>
+              Industries in the enclave will be pollution free (zero liquid
+              discharge zone)
+            </li>
+            <li>
+              Proposed industries include Food Processing, MSME’s such
+              asEngineering Goods, Assembly Units, Leather (Non Polluting)
+              ,Textiles Garments and ESDM industries.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--  -->
+      <div class="fp_grid_set big_height"data-aos="fade-up">
+        <div class="fp_investment_item">
+          <h3 class="fp_investment_heading">Residential Units</h3>
+          <div class="fp_line"></div>
+          <p class="fp_content">
+            With ever burgeoning demand on residential infrastructure in Delhi
+            NCR people will be naturally attracted with job opportunities and
+            connectivity to Delhi.
+          </p>
+          <ul class="fp_content">
+            <li>
+              Smart city concept will make life easier and quality of life will
+              improve.
+            </li>
+            <li>
+              With transit time lessening, work life balance of society will
+              improve, giving rise to a healthy population.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--  -->
+      <div class="fp_grid_set small_height"data-aos="fade-up">
+        <div class="fp_investment_item">
+          <h3 class="fp_investment_heading">Commercial</h3>
+          <div class="fp_line"></div>
+          <p class="fp_content">
+            Aims to be a self-sustained city with commercial establishments such
+            as shopping complexes, malls, theatre, multiplexes, restaurants,
+            auto showrooms, hotels, auto expo centre and other commercial
+            establishments. The area will also have a special golf course for
+            recreational purposes.
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="fp_grid_set small_height"data-aos="fade-up">
+        <div class="fp_investment_item">
+          <h3 class="fp_investment_heading">Institutions</h3>
+          <div class="fp_line"></div>
+          <p class="fp_content">
+            Universities training & skill development centres to make this zone
+            an attractive destination for investments. It consists of three site
+            for educational institutions to develop the zone as a world class
+            education hub having facilities from primary schools to post
+            graduation level.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flag_p_img1" data-aos="fade-up">
+      <img src="images/flagship_p--pic3.svg" alt="" />
+    </div>
+    <div class="fp_h2_div" data-aos="fade-up">
+      <div class="flagship_project_alignment fp_h1_line"></div>
+      <h2 class="fp_h2_heading">Facilities and infrastructure</h2>
+    </div>
+
+
+    <ul class="flagship_project_alignment fp_features_para" data-aos="fade-up">
+      <li>
+        Situated at a distance of approx. 75 kms. from Lucknow Airport & Kanpur
+        Rail Station (approx. 10 Km).
+      </li>
+      <li>
+        State-of-the-art infrastructure with Wide open roads, solar powered
+        light ,modern Auto Expo-mart ,Exhibition centre, multiplexes, mega
+        malls, parks & group housing society.
+      </li>
+      <li>
+        Provision for additional facilities include modern Auto Expo-mart, Golf
+        Course, ample Green zones, Exhibition center, multiplexes, mega malls,
+        parks & group housing societies.
+      </li>
+    </ul>
+
+
+    <div class="grid table_grid" data-aos="fade-up">
+      <div class="table_grid_item">
+        <table class="flag_table">
+          <thead class="flag_table_header">
+            <tr>
+              <th>Land Use</th>
+              <th>Area in Acres</th>
+            </tr>
+          </thead>
+          <tbody class="flag_table_body">
+            <tr>
+              <td>Residential</td>
+              <td>157.32</td>
+            </tr>
+            <tr>
+              <td>Industrial</td>
+              <td>145.61</td>
+            </tr>
+            <tr>
+              <td>Institutional(ins)</td>
+              <td>29.42</td>
+            </tr>
+            <tr>
+              <td>Commercial/ mixed use</td>
+              <td>110.12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table_grid_item">
+        <table class="flag_table">
+          <thead class="flag_table_header">
+            <tr>
+              <th>Land Use</th>
+              <th>Area in Acres</th>
+            </tr>
+          </thead>
+          <tbody class="flag_table_body">
+            <tr>
+              <td>Green/Water body</td>
+              <td>271.22</td>
+            </tr>
+            <tr>
+              <td>Amenities</td>
+              <td>78.62</td>
+            </tr>
+            <tr>
+              <td>Roads</td>
+              <td>290.46</td>
+            </tr>
+            <tr>
+              <td>Reserved for Formar's</td>
+              <td>61.27</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="flag_p_img1" style="margin-bottom: 120px; margin-left: 401px" data-aos="fade-up">
+      <img src="images/flagship_p--pic4.svg" alt="" />
+    </div>
+
+    <h1 class="flagship_project_heading" style="text-align: center" data-aos="fade-up">
+      TransGanga City Layout
+    </h1>
+
+    <div class="flag_p_img1" style="margin-left: 245px" data-aos="fade-up">
+      <img
+        class="Ganga_image"
+        src="images/flagship_p--pic5.svg"
+        alt="TransGanga City Layout"
+      />
+    </div>
+
+    <hr class="flagship_project_alignment fp_h1_line" data-aos="fade-up"/>
+    <h2 class="fp_h2_heading"data-aos="fade-up">Location Advantage</h2>
+
+    <div class="flagship_project_alignment grid location_grid"data-aos="fade-up">
+      <div class="location_item1">
+        <ul class="fp_features_para loc_margin">
+          <li>3 Km from Ganga Barrage at Kanpur.</li>
+          <li>10 Km from Kanpur central railway station.</li>
+          <li>21.2 Km from Unnao.</li>
+          <li>Located on Sitapur - Kanpur Road (NH-91 Bye Pass).</li>
+          <li>11 Km from Lucknow - Kanpur highway (NH-25).</li>
+          <li>75 Km from Lucknow airport.</li>
+          <li>Situated on Delhi-Howrah railway route.</li>
+          <li>
+            About 30 km from Bhaupur, upcoming Eastern Dedicated Freight
+            Corridor (EDFC) station.
+          </li>
+          <li>Close proximity to the State capital Lucknow</li>
+        </ul>
+      </div>
+      <div class="location_item2">
+        <img
+          class="loc_item_size"
+          src="images/image 6.png"
+          alt="Location advantage pic"
+        />
+      </div>
+    </div>
+
+    <div class="flagship_project_alignment loc_available" data-aos="fade-up">
+      <h4 class="loc_heading">Alloted plots (in units)</h4>
+      <div class="loc_item loc_item1">Industrial 15</div>
+      <div class="loc_item">Residential 1231</div>
+    </div>
+    <div class="loc_available" data-aos="fade-up">
+      <h4 class="loc_heading">Vacant plots (in units)</h4>
+      <div class="loc_item loc_item1">Industrial 166</div>
+      <div class="loc_item">Residential 829</div>
+    </div>
+
+    <h1 class="flagship_project_heading" style="text-align: center" data-aos="fade-up">
+      TransGanga City on Google Map
+    </h1>
+
+    <div class="map-responsive" data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.7232404492047!2d80.34218071460842!3d26.529024083294292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c393d42bdebd9%3A0x565ca2daa4b7e02!2sTrans%20Ganga%20City!5e0!3m2!1sen!2sin!4v1627484106586!5m2!1sen!2sin"
+        width="1160"
+        height="460"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <div class="fp_h2_div" data-aos="fade-up">
+      <hr class="flagship_project_alignment fp_h1_line" />
+      <h2 class="fp_h2_heading">UP Industrial Policy 2017 Highlights</h2>
+    </div>
+
+    <p class="flagship_project_alignment fp_features"data-aos="fade-up">
+      The features of project are
+    </p>
+    <div class="fp_features_arrow"data-aos="fade-up">
+      <img src="images/Arrow 2.svg" alt="Side Arrow" />
+    </div>
+    <div>
+      <ol class="flagship_project_alignment fp_features_para"data-aos="fade-up">
+        <li>Stamp duty exemption of 75% in Madhyanchal</li>
+        <li>EPF reimbursement facility to the extent of 50% of employer’s contribution to all such new Industrial units providing direct employment to 100 or more unskilled workers.</li>
+        <li>Capital Interest Subsidy to the extent of 5% per annum for 5 years in the form of reimbursement on loan taken for procurement of plant & machinery, subject to an annual ceiling of INR 50 lacs.</li>
+        <li>Infrastructure Interest Subsidy to the extent of 5% per annum for 5 years in the form of reimbursement on loan taken for development of infrastructural amenities for self-use like roads, sewer, water drainage, erection of power line, transformer and power feeder, subject to an overall ceiling of INR 1 Crore.</li>
+        <li>Interest subsidy to the extent of 5% per annum for 5 years in the form of reimbursement on loan taken for industrial research, quality improvement and development of products by incurring expenditure on procurement of plant, machinery & equipment for setting up testing labs, quality certification labs and tool rooms, subject to an overall ceiling of INR 1 Crore.</li>
+        <li>Exemption from electricity duty to all new industrial units set up in the state for 10 years.
+          </li>
+        <li>Exemption from electricity duty for 10 years to all new industrial units producing electricity from captive power plants for self-use.</li>
+        <li>Exemption from Mandi fee for all new food processing units on purchase of raw material for 5 years.</li>
+        <li>The industries which are disallowed for input tax credit under the GST regime, will be provided reimbursement of that amount of VAT/CST/GST paid on purchase of plant and machinery, building material and other capital goods during construction and commissioning period and raw materials and other inputs in respect of which input tax credit has not been allowed.</li>
+        <li>Units generating minimum employment of 200 direct workers including skilled and unskilled will be provided 10% additional EPF reimbursement facility on employer’s contribution.</li>
+        <li>All incentives in the form of reimbursement, subsidies, exemptions etc., will be subject to a maximum of 90% of fixed capital investment made in Madhyanchal region.</li>
+      </ul>
+    </div>
+
+    <p class="flagship_project_alignment fp_features_para"data-aos="fade-up">The eligibility requirements for the respective categories are as follows:</p>
+
+    <div class="flagship_project_alignment"data-aos="fade-up" style="margin-top: 33px;">
+      <table class="eligibility_table">
+        <thead class="eligibility_table_header">
+          <tr>
+            <th>Category</th>
+            <th>Minimum eligibility requirements (Madhyanchal)</th>
+          </tr>
+        </thead>
+        <tbody class="eligibility_table_body">
+          <tr>
+            <td>Mega</td>
+            <td>Capital investment of more than Rs.150 crore but less than Rs.300 crore OR Providing employment to more than 750 workers.</td>
+          </tr>
+          <tr>
+            <td>Mega plus</td>
+            <td>Capital investment of more than Rs.300 Crores but less than Rs.750 crore OR Providing employment to more than 1500 workers.</td>
+          </tr>
+          <tr>
+            <td>Super Mega</td>
+            <td>Capital investment of more than Rs.750 Crore OR Providing employment to more than 3000 workers.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="flagship_project_alignment fp_features_para"data-aos="fade-up"style="margin-top: 33px;">
+      <li> The incentives will be applicable for new units as well as projects under expansion/diversification. Projects in the mega categories (mega, mega plus and super mega) will be processed on a case to case basis for finalising the incentive structure.</li>
+      <li>All incentives for mega investments in the form of reimbursement, subsidies, exemptions etc., will be subject to a maximum of 200% of fixed capital investment made in Madhyanchal region.</li>
+    </ul>
+
+    <div class="flagship_project_alignment conditions_box"data-aos="fade-up"style="margin-top: 33px;">
+      <p class="flagship_para conditions_box_content">
+        The Conditions for (12.) are as follows:
+Units availing incentives from any other policy or those sanctioned by the departments of the State government, will also be entitled to avail incentives/benefits mentioned in this policy provided the same kind of benefits/incentives are not being availed from any other policy. If a unit avails any incentive under industry specific policies like Agro & Food Processing Policy, IT Policy etc., it will not be provided incentive of similar nature under this policy.
+A negative list of industries will be identified which will be ineligible for any incentives mentioned in this policy. However if any package of incentives has already been committed by the state government to any such unit before the industry was declared negative, the committed incentives will not be withdrawn and the unit will continue to remain entitled to the benefits.
+      </p>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- Script for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

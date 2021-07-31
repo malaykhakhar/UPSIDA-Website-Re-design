@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office Orders</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <script src="/script/main.js"></script>
+    <!-- Jquery for navbar and footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Loading Navbar & Footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Karla|Alatsi|Noto Sans JP|Inter|Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="/images/logo.svg" alt="website logo" />
+      </div>
+      <div class="logo--title logo--and--special">
+        Uttar Pradesh State Industrial Development Authority
+      </div>
+      <div class="special--link logo--and--special">
+        <a class="link1" href="">special link one</a>
+        <a class="link2" href="">special link two</a>
+      </div>
+
+      <div class="help logo--and--special">
+        <a class="contact" href="">Contact us</a>
+        <a class="login" href="">Login</a>
+      </div>
+    </nav>
+
+    <div class="back--nav">
+      <nav class="bottom--nav">
+        <div class="list__item">
+          <a class="nav--link" href="/index.html">HOME</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/about.html">ABOUT US</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/policies.html">POLICIES</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/eservices.html">E-SERVICES</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/flagship.html">FLAGSHIP PROJECTS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link dropbtn" onclick="myFunction()">
+            RESOURCE CENTER
+          </a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link active" href="/officeOrders.html"
+            >OFFICE ORDERS</a
+          >
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/error.html">GIS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/error.html">AVAILABLE PLOTS</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="dropdown-content" id="myDropdown">
+      <div class="line"></div>
+      <div class="content">
+        <div class="resource--heading">
+          <div class="resource--tag">Our recent links</div>
+          <div class="resource--title">Resource Center</div>
+        </div>
+
+        <!-- <div class="doc--table"> -->
+        <table class="documents--table">
+          <thead class="document--header">
+            <tr>
+              <th>DOCUMENTS</th>
+            </tr>
+          </thead>
+
+          <tbody class="document--body">
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Industrial area operating process</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Operating Manual</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Document For approval of building plans</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Present Rates</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Condition For tenders</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Allotment application form</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Service Rules</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- </div> -->
+
+        <table class="upsida--table">
+          <thead class="document--header">
+            <tr>
+              <th>UPSIDA</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >By laws of UPSIDA</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Amendment in UPSIDA Land Development & Building Regulation
+                  2018</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Second Amendment in UPSIDA Land Development</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="pages--table">
+          <thead class="document--header">
+            <tr>
+              <th>PAGES</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td>
+                <a
+                  href="/officeOrders.html"
+                  class="remove_link_decoration"
+                  target="_blank"
+                  >Office Orders</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Development Process</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="office--title">
+      <h1>Office Orders</h1>
+    </div>
+
+    <div class="mb-3 office--table">
+      <table class="mydatatable" style="width: 100%">
+        <thead class="office--header">
+          <tr>
+            <th class="office--data">Reference Number</th>
+            <th class="office--data">Category</th>
+            <th class="office--data">Issue Date</th>
+            <th class="office--data">Section</th>
+            <th class="office--data">Subject</th>
+            <th class="office--data">Description</th>
+          </tr>
+        </thead>
+        <tbody class="office--body">
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">671-674/SIDC/IA/Policy vol-17</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">UPSIDA</td>
+            <td class="sub office--body--data">Land Allotment Policy EODB</td>
+            <td class="office--body--data">MD</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">671-674/SIDC/IA/Policy vol-17</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">UPSIDA</td>
+            <td class="sub office--body--data">Land Allotment Policy EODB</td>
+            <td class="office--body--data">MD</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">302-674/SIDC/IA/Policy vol-17</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">UPSIDA</td>
+            <td class="sub office--body--data">Land Allotment Policy EODB</td>
+            <td class="office--body--data">MD</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">1027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+      $(".mydatatable").DataTable({
+        // dom: '<"top">rt<"bottom"lfp><"clear">',
+      });
+    </script>
+  </body>
+</html>

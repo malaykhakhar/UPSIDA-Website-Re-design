@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <script src="/script/main.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Karla|Alatsi|Noto Sans JP|Inter|Roboto"
+      rel="stylesheet"
+    />
+    <!-- Jquery for navbar and footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Loading Navbar & Footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+
+
+  <body>
+    <!-- <div id="navbar"></div> -->
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <img src="/images/logo.svg" alt="website logo" />
+      </div>
+      <div class="logo--title logo--and--special">
+        Uttar Pradesh State Industrial Development Authority
+      </div>
+      <div class="special--link logo--and--special">
+        <a class="link1" href="">special link one</a>
+        <a class="link2" href="">special link two</a>
+      </div>
+
+      <div class="help logo--and--special">
+        <a class="contact" href="">Contact us</a>
+        <a class="login" href="">Login</a>
+      </div>
+    </nav>
+
+    <div class="back--nav">
+      <nav class="bottom--nav">
+        <div class="list__item">
+          <a class="nav--link active" href="/index.html">HOME</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/about.html">ABOUT US</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/policies.html">POLICIES</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/eservices.html">E-SERVICES</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/flagship.html">FLAGSHIP PROJECTS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link dropbtn" onclick="myFunction()">
+            RESOURCE CENTER
+          </a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/officeOrders.html">OFFICE ORDERS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/error.html">GIS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/error.html">AVAILABLE PLOTS</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="dropdown-content" id="myDropdown">
+      <div class="line"></div>
+      <div class="content">
+        <div class="resource--heading">
+          <div class="resource--tag">Our recent links</div>
+          <div class="resource--title">Resource Center</div>
+        </div>
+
+        <!-- <div class="doc--table"> -->
+        <table class="documents--table">
+          <thead class="document--header">
+            <tr>
+              <th>DOCUMENTS</th>
+            </tr>
+          </thead>
+
+            <tbody class="document--body">
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Industrial area operating process</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Operating Manual</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Document For approval of building plans</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Present Rates</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Condition For tenders</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Allotment application form</a></td>
+              </tr>
+              <tr>
+                <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Service Rules</a></td>
+              </tr>
+            </tbody>
+
+        </table>
+        <!-- </div> -->
+
+        <table class="upsida--table">
+          <thead class="document--header">
+            <tr>
+              <th>UPSIDA</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">By laws of UPSIDA</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/error.html" class="remove_link_decoration remove_resource_padding">Amendment in UPSIDA Land Development & Building Regulation 2018</a>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Second Amendment in UPSIDA Land Development</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="pages--table">
+          <thead class="document--header">
+            <tr>
+              <th>PAGES</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td><a href="/officeOrders.html" class="remove_link_decoration" target="_blank">Office Orders</a></td>
+            </tr>
+            <tr>
+              <td><a href="/error.html" class="remove_link_decoration remove_resource_padding">Development Process</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <img class="hero" src="/images/image 2.jpg" alt="" />
+    <div class="intro--container">
+      <marquee
+        class="sliding--content"
+        behavior="scroll"
+        direction="left"
+        onmousedown="this.stop();"
+        onmouseup="this.start();"
+        >Setting up of Hospitals, Schools, Flatted Factories, Warehouses,
+        Industries, Group Housing, Sports Stadium, Golf Course with Club House,
+        5 Star Hotels or any other Real Estate Project in the Future Smart
+        Cities - Trans Ganga City, Unnao near Kanpur & Saraswati Hi-Tech City,
+        Prayagraj</marquee
+      >
+    </div>
+
+    <div class="services" data-aos="fade-up">
+        <div class="service_icon service_gap">
+          <a href="/error.html" class="service_link"
+            ><img src="images/Group 22-1.svg" alt="" class="service_image" />
+            <div class="service_text">Online services</div>
+          </a>
+        </div>
+        <div class="service_icon service_gap">
+          <a href="/error.html" class="service_link">
+            <img src="images/Group 22-2.svg" alt="" class="service_image" />
+            <div class="service_text">Track application</div>
+          </a>
+        </div>
+        <div class="service_icon service_gap">
+          <a href="/error.html" class="service_link"
+            ><img src="images/Group 22-3.svg" alt="" class="service_image" />
+            <div class="service_text">UPSIDA newsletter</div>
+          </a>
+        </div>
+        <div class="service_icon service_gap">
+          <a href="/error.html" class="service_link">
+            <img src="images/Group 22-4.svg" alt="" class="service_image" />
+            <div class="service_text">Invester guide</div>
+          </a>
+        </div>
+        <div class="service_icon">
+          <a href="/error.html" class="service_link">
+            <img src="images/Group 22-5.svg" alt="" class="service_image" />
+            <div class="service_text">Apply for logistics</div>
+          </a>
+        </div>
+      </a>
+    </div>
+
+    <div class="grid grid--1x2 aboutus--container" data-aos="fade-left">
+      <div class="intro--heading">
+        <p class="aboutus--heading">About us</p>
+        <p class="whatisupsida--heading">What is UPSIDA?</p>
+      </div>
+      <div class="aboutus--para">
+        <p>
+          UPSIDA is the nodal agency for developing industrial
+          infrastructure.<br /><br />
+          UPSIDA has been spearheading the industrial promotion in the State and
+          has been instrumental in keeping the State at the numero uno position
+          among the states for several decades now.
+        </p>
+
+        <div class="viewmore">
+          <a href="/about.html" target="_blank" class="aboutus--more hvr-fade"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="leader" data-aos="fade-up">
+      <img src="/images/leaders.jpg" alt="" class="leader_img" />
+    </div>
+    <div class="projects--container">
+      <div class="projects--heading" data-aos="fade-up">
+        Promoting industrial progress with a plethora of investor friendly
+        platform
+      </div>
+
+      <div class="index_flagship_grid">
+        <div class="cards text-pop-up-top" data-aos="fade-up">
+          <a href="/transGangaProject.html" class="remove_link_decoration" target="_blank">
+            <div>
+              <img
+                src="/images/trans ganga city.jpg"
+                alt="Trans Ganga City image"
+                class="cards_image"
+              />
+            </div>
+            <div class="project--tag project--tag1">TRANS GANGA CITY</div>
+            <div class="project--title">Trans Ganga City, UNNAO</div>
+            <div class="project--desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </div>
+          </a>
+          <!-- <div class="index_flagship_more">
+            <a class="card_link" href="">Learn More</a>
+          </div> -->
+        </div>
+
+        <div class="cards text-pop-up-top" data-aos="fade-up">
+          <a href="#" class="remove_link_decoration">
+            <div>
+              <img
+                src="/images/Saraswati Hi Tech City.jpg"
+                alt="Saraswati Hi Tech City image"
+                class="cards_image"
+              />
+            </div>
+            <div class="project--tag project--tag2">SARASWATI HI TECH CITY</div>
+            <div class="project--title">Saraswati HI-TECH City, Allahabad</div>
+            <div class="project--desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </div>
+            <!-- <div class="index_flagship_more">
+              <a class="card_link" href="">Learn More</a>
+            </div> -->
+          </a>
+        </div>
+
+        <div class="cards text-pop-up-top" data-aos="fade-up">
+          <a href="" class="remove_link_decoration">
+            <div>
+              <img
+                src="/images/trans delhi signature city.jpg"
+                alt="Trans Delhi Signature City image"
+                class="cards_image"
+              />
+            </div>
+            <div class="project--tag project--tag3">
+              TRANS DELHI SIGNATURE CITY
+            </div>
+            <div class="project--title">
+              Trans Delhi Signature City, Gaziabad
+            </div>
+            <div class="project--desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </div>
+            <!-- <div class="index_flagship_more">
+              <a class="card_link" href="">Learn More</a>
+            </div> -->
+          </a>
+        </div>
+
+        <div class="cards text-pop-up-top" data-aos="fade-up">
+          <a href="" class="remove_link_decoration">
+            <div>
+              <img
+                src="/images/plastic city.jpg"
+                alt="Plastic City image"
+                class="cards_image"
+              />
+            </div>
+            <div class="project--tag project--tag4">PLASTIC CITY</div>
+            <div class="project--title">Plastic City, AURAIA</div>
+            <div class="project--desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </div>
+            <!-- <div class="index_flagship_more">
+              <a class="card_link" href="">Learn More</a>
+            </div> -->
+          </a>
+        </div>
+
+        <div class="cards text-pop-up-top" data-aos="fade-up">
+          <a href="" class="remove_link_decoration">
+            <div>
+              <img
+                src="/images/akic.jpg"
+                alt="Amritsar Kolkata Industrial Corridor image"
+                class="cards_image"
+              />
+            </div>
+            <div class="project--tag project--tag5">AKIC</div>
+            <div class="project--title">
+              Amritsar Kolkata Industrial Corridor
+            </div>
+            <div class="project--desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </div>
+            <!-- <div class="index_flagship_more">
+              <a class="card_link" href="">Learn More</a>
+            </div> -->
+          </a>
+        </div>
+
+        <div class="cards text-pop-up-top" data-aos="fade-up">
+          <a href="" class="remove_link_decoration">
+            <div>
+              <img
+                src="/images/perfume park.jpg"
+                alt="Perfume Park image"
+                class="cards_image"
+              />
+            </div>
+            <div class="project--tag project--tag6">PERFUME PARK</div>
+            <div class="project--title">Perfume Park, Kannauj</div>
+            <div class="project--desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+            </div>
+            <!-- <div class="index_flagship_more">
+              <a class="card_link" href="">Learn More</a>
+            </div> -->
+          </a>
+        </div>
+      </div>
+
+      <a href="/flagship.html" target="_blank" class="view__more hvr-fade1"
+        >View More</a
+      >
+    </div>
+
+    <table class="news__letter" data-aos="fade-right">
+      <thead class="header">
+        <tr>
+          <th>UPSIDA Newsletter</th>
+        </tr>
+      </thead>
+      <tbody class="news--body">
+        <tr>
+          <td>
+            Newsletter (Edition-1)
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Newsletter (Edition-2)
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Newsletter (Edition-2)
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Newsletter (Edition-2)
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Newsletter (Edition-2)
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Newsletter (Edition-2)
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="news__letter tenders" data-aos="fade-left">
+      <thead class="header">
+        <tr>
+          <th>News and tenders</th>
+        </tr>
+      </thead>
+      <tbody class="news--body">
+        <tr>
+          <td>
+            E-tender notice for maintainence and development
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            E-tender notice for maintainence and development
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            E-tender notice for maintainence and development
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            E-tender notice for maintainence and development
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            E-tender notice for maintainence and development
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            E-tender notice for maintainence and development
+            <div class="news--date">Date: July 19, 2021</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="footer"></div>
+
+    <!-- Script for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
